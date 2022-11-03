@@ -1,0 +1,69 @@
+@font-face {
+    font-family: pixel;
+    src: url(Silkscreen-Regular.ttf);
+}
+
+@font-face {
+    font-family: pixelbold;
+    src: url(Silkscreen-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    color: white;
+}
+
+.inner {
+    /* scales SB to 1080p screen size*/
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+
+    width: 55%;
+    height: 70px;
+    display: flex;
+    font-size: 30px;
+
+    background-color: black;
+    font-family: pixel;
+
+    border: solid;
+    border-color: #75cb0b;
+    border-width: 6px;
+    border-radius: 8px;
+}
+
+.player {
+    width: 35%;
+
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    width: 10%;
+    font-size: 50px;
+    color: #75cb0b;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    font-family: pixelbold;
+}
+
+.symbol {
+    width: 10%;
+}
+
+.round {
+    width: 35%;
+    color: #32b5fc;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
