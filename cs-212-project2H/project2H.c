@@ -13,7 +13,7 @@ int *AllocateArray(int N)
 	*/
 	int * array = malloc(sizeof(int)*N);
 	for (int i = 0; i <= N; i++){
-	array[i] = rand() % (10*N+1);
+		array[i] = rand() % (10*N+1);
 	}
 	return array;
 }
