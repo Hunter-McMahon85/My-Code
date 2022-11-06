@@ -128,8 +128,6 @@ Shape * CreateTriangle(double pt1X, double pt2X, double minY, double maxY)
     return f;
 };
 
-/* NEW FUNCTIONS */
-
 double GetArea(Shape *s){
     return s->area(s->self);
 };
