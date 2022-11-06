@@ -86,4 +86,5 @@ int main()
         printf("\tTime for sort_time is %g, time per element = %g\n", sort_time, sort_time/sizes[i]);
         printf("\tTime for deallocation is %g\n", dealloc_time);
     }
+    return 0
 }
