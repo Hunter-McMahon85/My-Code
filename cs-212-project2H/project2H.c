@@ -5,7 +5,8 @@
 
 int *AllocateArray(int N)
 {
-	/* Allocate an array with N integers.
+	/* 
+	* Allocate an array with N integers.
 	* The value of each element of the array should be a
 	* random number between 0 and 10N.
 	* Hint: use the rand() function and a modulo operator.
@@ -47,7 +48,8 @@ int main()
 {
     int sizes[8] = { 1000, 2000, 4000, 8000, 16000, 32000, 64000, 128000 };
 
-/* For fun:
+/* 
+ *  For fun:
  *  int sizes[11] = { 1000, 2000, 4000, 8000, 16000, 32000, 64000, 128000,
  *                    256000, 512000, 1024000 }; 
  */
@@ -58,7 +60,8 @@ int main()
         struct timeval startTime;
         struct timeval endTime;
 
-        /* Call the three functions in a sequence. Also use
+        /* 
+	 * Call the three functions in a sequence. Also use
          * gettimeofday calls surrounding each function and set the 
          * corresponding variable (alloc_time, sort_time, dealloc_time).
          */
