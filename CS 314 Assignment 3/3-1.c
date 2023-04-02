@@ -25,8 +25,8 @@ freeIntArray(struct IntArray * arrayptr){
 
 int 
 readInt() {
-	// modified helper function from lab 4 code, this one is used to get
-	// the user input for length
+    // modified helper function from lab 4 code, this one is used to get
+    // the user input for length
     char lineBuf[10];
     char *p = NULL;
     int n;
@@ -49,24 +49,24 @@ readInt() {
 
 void
 readIntArray(struct IntArray * array){
-		char lineBuf[10];
+	char lineBuf[10];
         char *p = NULL;
         int n;
         int i = 0;
-		do{
-			printf("Enter int: ");
+	do{
+		printf("Enter int: ");
     		while (1) {
-                // again we can modify the readint function given in lab4
+                	// again we can modify the readint function given in lab4
 
-                fgets(lineBuf, sizeof(lineBuf), stdin);
-                n = strtol(lineBuf, &p, 10);
-                if (lineBuf != p) {
-                	array->dataptr[i] = n;
-            		i ++;
-                    break;
-                }
-                printf("Invalid input\n");
-                break;
+                	fgets(lineBuf, sizeof(lineBuf), stdin);
+                	n = strtol(lineBuf, &p, 10);
+                	if (lineBuf != p) {
+                		array->dataptr[i] = n;
+            			i ++;
+                    		break;
+                	}
+                	printf("Invalid input\n");
+                	break;
         	}
         	// and create a nested while loop
     	} while(i < array->length); 
@@ -84,7 +84,6 @@ void
 sortIntArray(struct IntArray *array){
 	// i refered to https://geeksforgeeks.org/bubble-sort/ on this
 	for (int i = 0; i < array->length-1; i++){
-
 		for (int j = 0; j < array->length - i - 1; j++){
 
 			if (array->dataptr[j] > array->dataptr[j+1]){
