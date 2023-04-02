@@ -26,7 +26,7 @@ freeIntArray(struct IntArray * arrayptr){
 int 
 readInt() {
 	// modified helper function from lab 4 code, this one is used to get
-	// the user input for legth
+	// the user input for length
     char lineBuf[10];
     char *p = NULL;
     int n;
