@@ -1,0 +1,11 @@
+year:1960, rainfall: 12.02
+year:1964, rainfall: 10.7
+year:1973, rainfall: 20.48
+year:1983, rainfall: 13.13
+year:1984, rainfall: 18.67
+year:1986, rainfall: 11.05
+year:1988, rainfall: 14.27
+year:1991, rainfall: 10.47
+year:1996, rainfall: 12.06
+year:1998, rainfall: 11.35
+year:2006, rainfall: 14.28

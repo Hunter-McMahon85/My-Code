@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Russian Warplanes</title>
+ <link rel="stylesheet" href="aircraft-list.css">
+</head>
+<article>
+<h2> <a href="my-new-site.html">Back to Home</a></h2>
+<h1><img src="flag-ru.png" alt="US Flag"><br>Russian Aircraft</h1>
+
+<h3>Nato Designations<br>*Rusian aircaft can be refered to by their nato designations as noted in quotation marks ""</h3>
+
+<ul>
+<li>Mig-35 "Fulcrum"<br><img src="mig-35.jpg" alt="mig-35"><br>The Mig-35 is a Russian Multirole fighter much like the american f-18 in that it can be carrier based and can be used for a variety of different attack functions.</li><br>
+<li>Mig-31 "Foxhound"<br><img src="mig-31.jpg" alt="mig-31"><br>The Mig-31 is a supersonic interceptor. Its fast but unmaneuverable and is on the verge of being replaced.</li><br>
+<li>Su-57 "Felon"<br><img src="su-57.jpg" alt="su-57"><br>The Su-57 is Russias most advanced fighter only recently exiting its prototype stage and entering production, it has stealth and supermaneuverability capabilites.</li><br>
+<li>Su-34 "Fullback"<br><img src="su-34.jpg" alt="su-34"><br>The Su-34 is a Russian Fighter-Bomber made for use against air, gorund, and naval targets.</li><br>
+<li>su-25 "Frogfoot"<br><img src="su-25.jpg" alt="su-25"><br>The su-25 is a Russian Close air support Aircraft initally built and used by the soviet union but upgraded versions still serve as Russias primary CAS aircraft.</li><br>
+  </ul>
+</article>
+</html>

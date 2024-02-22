@@ -1,0 +1,25 @@
+void f(struct FloatMatrix *mat, float *res){
+    float r0 = 0.0f;
+    float r1 = 0.0f;
+    float r2 = 0.0f;
+    float r3 = 0.0f;
+    float r4 = 0.0f;
+    int Mlen = length(mat);
+    int j;
+    for (int i = 0; i < Mlen; ++i)
+    {	
+        for (j = 0; j < Mlen; j += 5)
+        {
+            r0 += mat->values[i][j];
+            r1 += mat->values[i][j+1]; 
+            r2 += mat->values[i][j+2]; 
+            r3 += mat->values[i][j+3];
+            r4 += mat->values[i][j+4];
+        }
+        for (; j < Mlen; ++j)
+        {
+            r0 += mat->values[i][j];
+        }
+    }
+    *res = r0 + r1 + r2 + r3 + r4;
+}

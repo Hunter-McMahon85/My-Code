@@ -1,0 +1,238 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen&display=swap");
+
+* {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding-left: 10px;
+  clear: left;
+  margin-top: 30px;
+  background-color: #474540;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.topnav {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+  top:0;
+}
+
+
+.nav_items {
+  list-style-type: none;
+  padding-left: 10px;
+  background-color: black;
+}
+
+.nav_items li {
+  display: inline;
+}
+
+.nav_items li a {
+  display: inline;
+  background-color: black;
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  font-family: "Oxygen", sans-serif;
+  font-size: 17px;
+}
+
+.nav_items li a:hover {
+  background-color: blue;
+  color: #ffff57;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav_items li a.home:first-child {
+  background-color: blue;
+  color: #ffff57;
+  margin-right: 14px;
+}
+
+.nav_items li a.home:hover:first-child {background: black;
+  color: white;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+a > img {
+  object-fit: cover;
+  margin: 0;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+  background-color: black;
+}
+.icon > img {
+  width: 30px;
+  background-color: black;
+}
+
+#HamLinks {position: fixed;
+  display: none;
+  flex-direction: column;
+  float: right;
+  width: auto;
+  background-color: #ddd;
+  color: blue;
+  top:60px;
+  right: 0px;
+  z-index: 4;
+}
+
+#HamLinks a {
+  background-color: gray;
+  color: yellow;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#HamLinks a:hover {
+  background-color: black;
+  color: blue;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+body{text-align: center;
+background: black;
+color: White;}
+/*intro*/
+
+
+#intro div.back {
+  position: relative;}
+  #intro div.back:before {
+    content:'';
+    position: absolute;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    left: 0px;
+    background-image: url("../images/introback.jpg");
+    background-size: cover;
+    opacity: 0.3
+  }
+
+
+#intro div.tttx h1 {position: relative;
+  margin:2%;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: yellow;
+  margin-bottom: 0;
+}
+
+
+  #intro h2 {margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top:7px;
+position: relative;
+    background-color: #4588f5;
+    width: 100%;
+    color:white;}
+  #intro p {margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #4588f5;
+    width: 100%;
+  color:white;
+padding-bottom: 10px}
+
+/*s2*/
+
+#History div.hback {
+  position: relative;}
+  #History div.hback:before {
+    content:'';
+    position: absolute;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    left: 0px;
+    background-image: url("../images/heritage.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.6;
+    filter:grayscale(100%);
+  }
+#History div.htxt h2 {position: relative;
+  margin:2%;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+
+picture.tom:hover {border-color: black;
+border-width: 4px;
+border-style: solid;}
+picture.tom {float:left;}
+#history p {text-align: left;
+margin-bottom: 100px;
+}
+
+/*s3*/
+#partners div.pback {
+  position: relative;}
+  #partners div.pback:before {
+    content:'';
+    position: absolute;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    left: 0px;
+    background-image: url("../images/production.jpg");
+    background-size: cover;
+    opacity: 0.3
+  }
+
+
+#partners div.pttx h2 {position: relative;
+  margin:5%;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: yellow;
+  margin-bottom: 0;
+}
+#partners a {color: yellow;}
+#partners p {background-color:#4588f5;
+padding-top: 10px;
+padding-bottom: 5px;
+margin-top: 0px;}
+@media screen and (min-width: 1000px) {
+picture.tom {float:none;
+}
+}

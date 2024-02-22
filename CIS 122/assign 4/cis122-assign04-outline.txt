@@ -1,0 +1,9 @@
+1. use the input function to ask the user for an input for day and year and assign these values to a variable
+2. import the is_leap_year() function from lab 4 
+3. check to see if the year is valid (year>0), if not it will output an error message
+4. call the is_leap_year() function for the inputed year to get a boolean value & assign to variable
+5. write a function to check if the day is valid, if not it will output an error message
+6. if both the day and the year are valid, code will move on to a function to give the date,
+7. write the code to determine what month of the year it is based on conditionals and day of year, this will be dependent on whether or not the year is a leap year.
+8. with the month determined, code will then need to be written to do math figure out what day of the month it is. 
+9. now that the day month and year have been determined, they must be put together as a string and printed back to the user

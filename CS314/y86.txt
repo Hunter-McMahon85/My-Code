@@ -1,0 +1,20 @@
+IF:
+icode:ifun M1[PC]
+rA:rB <- M1[PC+1]
+valC <- M8[PC+2]
+valP <- PC + 10
+
+ID:
+valB <- R[rB]
+
+EX:
+valE <- valB - valC
+Set CC
+
+MEM:
+
+WB:
+R[rB] <- valE
+
+PC:
+PC <- valP

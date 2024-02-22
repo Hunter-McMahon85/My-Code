@@ -1,0 +1,25 @@
+body {
+  background-color: #4588f5;
+  margin: 0 10%;
+  font-family: sans-serif;
+}
+
+img {
+  border: 5px solid #555;
+}
+
+h1{
+ color: #ffffff;
+ text-align: center;
+ font-family: serif;
+ font-weight: normal;
+ text-transform: uppercase;
+ border-bottom: 1px solid #57b1dc;
+ margin-top: 30px;
+}
+h2{
+ color: #ffffff;
+ font-size: 1em;
+ text-align: left;}
+
+a{color: #ffffff;}

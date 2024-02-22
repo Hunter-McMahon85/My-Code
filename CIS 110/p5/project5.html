@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Military Aviation</title>
+  <link rel="stylesheet" href="css/project5.css">
+</head>
+<body>
+
+  <div class="container">
+    <nav class="topnav">
+      <ul class="nav_items">
+        <li><a href="project5.html" class="home">Home</a></li>
+        <li><a href="project5.html#intro">What We Do</a></li>
+        <li><a href="project5.html#History">Weekly History</a></li>
+        <li><a href="project5.html#partners">Partners</a></li>
+      </ul>
+      <img src="images/img_avatar.png" alt="Avatar" class="avatar" />
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/menu-icon.png" alt="ham icon" />
+      </a>
+    </nav>
+  </div>
+
+  <div id="HamLinks">
+    <a href="auxiliary_files/aux1.html">USA</a>
+    <a href="auxiliary_files/aux2.html">Russia</a>
+    <a href="auxiliary_files/aux3.html">India</a>
+    <a href="auxiliary_files/">Login/Logout</a>
+  </div>
+  <main>
+<section id="intro">
+  <div class="back">
+  <div class="tttx">
+      <h1>Military Aviation DataBase</h1>
+    </div>
+  </div>
+  <h2>What we Do</h2>
+  <p>Our page is setting out to become the most comprehensive database about all things military aviation, Currently we only have info on Active U.S, Indian and Russian Aircarft but we are planing on Expanding our website in the future to cover warplanes from all nations and Eras<br> Our pages for each country can be found in the drop down menu in the top right corner.<p>
+</section>
+<section id="History">
+  <div class="hback">
+    <div class="htxt">
+  <h2 class="hist">Historic Plane of the Week</h2>
+</div>
+</div>
+  <h3>The Historic plane of this week is: The F-14 Tomcat</h3>
+<a class="caratom" href="auxiliary_files/carrousel.html">
+  <picture class="tom">
+  <source srcset="images/tomcat1.jpg" media="(max-width: 1000px)">
+    <source srcset="images/tomcat3.jpg" media="(max-width: 1600px)">
+      <source srcset="images/tomcat4.jpg">
+        <img src="images/tomcat1.jpg" alt="tomcat">
+</picture>
+</a>
+<p>introduced: 1974 retired 2006 <br>The F-14 Tomcat is a legend of a carrier based Aircraft and even a pop culture icon with it being featured heavily in the movies <em>Top Gun</em> and <em>The Final Countdown</em> Ultimately the US navy would replace it with the F/A 18 Hornet due to it being a cheaper aircraft that could do the same job (and it didnt require a Rio). However thats not to say that the Tomcat was a chump with a top speed of mach 2.1 compared to the hornets mach 1.5. Additionally the Tomcat could be equiped with a wide arsenel of Missiles and bombs including AIM-54 Pheonix Missiles which, with the tomcats weapons system allowed it to engage Bogeys at a range of up to 100 nautical miles.</p>
+</section>
+<Section id="partners">
+  <div class="pback">
+    <div class="pttx">
+  <h2>Our Partners</h2>
+</div>
+</div>
+    <p>We have to give credit where credits due, by clicking <a href="auxiliary_files/cards.html">Here</a> you will find a list of all the manufactures who built the aicraft featured on this page along with the armed forces branches of each nation that are mentioned on our page.</p>
+  <h6>website descriptions and text copyright Hunter.M <br> all aircraft featured are owned and copyrighted by their respective manufactures</h6>
+</section>
+</main>
+<script>
+  function myFunction() {
+    var x = document.getElementById("HamLinks");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+</script>
+</body>
+</html>

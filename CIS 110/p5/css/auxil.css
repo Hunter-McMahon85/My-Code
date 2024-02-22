@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen&display=swap");
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.topnav {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+  top:0;
+}
+
+
+.nav_items {
+  list-style-type: none;
+  padding-left: 10px;
+  background-color: black;
+}
+
+.nav_items li {
+  display: inline;
+}
+
+.nav_items li a {
+  display: inline;
+  background-color: black;
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  font-family: "Oxygen", sans-serif;
+  font-size: 17px;
+}
+
+.nav_items li a:hover {
+  background-color: blue;
+  color: #ffff57;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav_items li a.home:first-child {
+  background-color: blue;
+  color: #ffff57;
+  margin-right: 14px;
+}
+
+.nav_items li a.home:hover:first-child {background: black;
+  color: white;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+a > img {
+  object-fit: cover;
+  margin: 0;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+  background-color: black;
+}
+.icon > img {
+  width: 30px;
+  background-color: black;
+}
+
+#HamLinks {position: fixed;
+  display: none;
+  flex-direction: column;
+  float: right;
+  width: auto;
+  background-color: #ddd;
+  color: blue;
+  top:60px;
+  right: 0px;
+  z-index: 4;
+}
+
+#HamLinks a {
+  background-color: gray;
+  color: yellow;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#HamLinks a:hover {
+  background-color: black;
+  color: blue;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/*body*/
+h1 {text-align: center;}
+body {background-color: #4588f5;}
+#usa div.usb {
+  position: relative;}
+  #usa div.usb::before {
+    content:'';
+    position: absolute;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    left: 0px;
+    background-image: url("../images/flag-usa.jpg");
+    background-size: cover;
+    opacity: 0.6
+  }
+
+
+#usa div.ustxt h1 {position: relative;
+  margin:2%;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: black;
+  margin-bottom: 0;
+}
+
+#ru div.rub {
+  position: relative;}
+  #ru div.rub::before {
+    content:'';
+    position: absolute;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    left: 0px;
+    background-image: url("../images/flag-ru.png");
+    background-size: cover;
+    opacity:.6;
+  }
+
+
+#ru div.rutxt h1 {position: relative;
+  margin:2%;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: black;
+  margin-bottom: 0;
+}
+
+#in div.inb {
+  position: relative;}
+  #in div.inb::before {
+    content:'';
+    position: absolute;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    left: 0px;
+    background-image: url("../images/Flag-India.jpg");
+    background-size: cover;
+    opacity:.6;
+  }
+
+
+#in div.intxt h1 {position: relative;
+  margin:2%;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: black;
+  margin-bottom: 0;
+}

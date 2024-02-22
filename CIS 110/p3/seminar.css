@@ -1,0 +1,12 @@
+td, th {
+    border: thin solid;
+    padding: 7px;
+    text-align: center;}
+    #day {background-color: green; }
+    #Schedule {background-color: magenta;}
+    #title {background-color: cyan;}
+    #topic {background-color: lightgrey;}
+    #mon-topic {background-color: yellow;}
+    #tue-topic {background-color: pink;}
+    #wes-topic {background-color: lime}
+table{column-count: 4;}

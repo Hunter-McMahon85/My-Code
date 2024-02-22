@@ -1,0 +1,5 @@
+ERROR:MyFirstLog:Something is very wrong!
+INFO:MyFirstLog:This is just FYI.
+
+
+this file was created by the example code in testlogging.py

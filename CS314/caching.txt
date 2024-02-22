@@ -1,0 +1,145 @@
+A. 
+Offset Bits = log2(4) = 2
+
+B.
+Set Bits = log2(8) = 3 
+
+*tag bits = 8 - 3 - 2 = 3
+
+T S O
+3 3 2
+C.  
+0x06
+T   S   O 
+000 001 10
+T   S   V
+0   1   1
+cold miss
+________________________
+0x02
+T   S   O
+000 000 10
+T   S   V
+0   0   1
+Hit
+________________________
+0x01
+T   S   O
+000 000 01
+T   S   V
+0   0   1
+Hit
+________________________
+0x22
+T   S   O
+001 000 10
+T   S   V
+1   0   1
+Conflict Miss
+________________________
+0x07
+T   S   O
+000 001 11
+T   S   V
+0   1   1
+Conflict Miss
+________________________
+0x01
+T   S   O
+000 000 01
+T   S   V
+0   0   1
+Hit
+________________________
+0x20
+T   S   O
+001 000 00
+T   S   V
+1   0   1
+Conflict Miss
+________________________
+
+D.
+(cache size)/(block size *associativity level) =  num sets
+32/4*2 = 4
+Set Bits = log2(4) = 2
+Offset Bits = log2(4) = 2
+Tag Bits = 8-2-2 = 4
+T S O
+4 2 2
+
+0x06
+T    S   O 
+0000 01 10
+T    S   V
+0    1   1
+cold Miss
+Cache contents(2 rows): 
+T S V
+0 1 1
+________________________
+0x02
+T    S   O
+0000 00 10
+T    S   V
+0    0   1
+Hit
+Cache contents(2 rows): 
+T S V
+0 1 1
+________________________
+0x01
+T    S   O
+0000 00 01
+T    S   V
+0    0   1
+Hit
+Cache contents(2 rows): 
+T S V
+0 1 1
+________________________
+0x22
+T    S   O
+0010 00 10
+T    S   V
+2    0   1
+Cold Miss
+Cache contents (2 rows): 
+T S V
+0 1 1
+2 0 1
+________________________
+0x07
+T    S   O
+0000 01 11
+T    S   V
+0    1   0
+Hit
+Cache contents (2 rows): 
+T S V
+0 1 1
+2 0 1
+________________________
+0x01
+T    S   O
+0000 00 01
+T    S   V
+0    0   1
+Hit
+Cache contents (2 rows): 
+T S V
+0 1 1
+2 0 1
+________________________
+0x20
+T    S   O
+0010 00 00
+T    S   V
+2    0   0
+Hit
+Cache contents (2 rows): 
+T S V
+0 1 1
+2 0 1
+________________________
+
