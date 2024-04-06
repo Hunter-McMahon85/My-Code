@@ -1,0 +1,11 @@
+before parallelizing the loop the run time for spmv was about .8 seconds for 32 threads. 
+After parallelization, the runtime for the spmv process was reduced toabout .2 seconds for 32 threads. thus we see a .6 second reduction in run times.
+though with only 1 thread, the parallelized version of the loops take 3.1 seconds to compute meanwhile the non-parallelized verision still computes in .8 seconds.
+I suspect this has to do to the fact that parallizing code doesnt work in a context where there is only one thread and thus only one thing can be computed/process at a time. 
+Therefore when limited to a single thread, the code within the OpenMP module thats normally executed to optimize the operation still gets called and instead becomes an 
+obstruction to performance as nothing can be done in parallel when limited to one thread.
+Though even then, i think the context in which a program would be limited to only run on a single thread are extrememly limited therefore in almost all cases it is worthwile to optimize using paralelization whenever possible.
+
+Non-parallelized: .8 seconds runtime
+parallelized (32 threads): .2 seconds runtime
+parallelized (1 thread): 3.1 seconds runtime
